@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 4rem;
+    margin-top: 3.2rem;
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+    width: calc(100% - 8rem);
+    transform: translateY(-50%);
+    margin-bottom: 8rem;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    gap: 3.2rem;
+    font-size: 18rem;
+
+    @media (max-width: 768px) {
+      font-size: 30rem;
+    }
+  }
+
+  &__line {
+    display: inline-block;
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center center;
+  }
+
+  &__content {
+    height: 100vh;
+    background-color: yellow;
+  }
+}
