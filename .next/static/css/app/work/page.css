@@ -1,0 +1,174 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/components/Loader/Loader.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Loader_loader__eKItv {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+}
+.Loader_loader__wrapper__5JNqV {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+.Loader_loader__words__NJBoy {
+  position: relative;
+  overflow: hidden;
+  height: 41.8rem;
+}
+@media (max-width: 768px) {
+  .Loader_loader__words__NJBoy {
+    height: 88.8rem;
+  }
+}
+.Loader_loader__overlay__W66Uq {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.819), rgba(255, 255, 255, 0.819) 47%, transparent, transparent 47%, transparent, transparent 55%, rgba(255, 255, 255, 0.819) 50%, rgba(255, 255, 255, 0.819));
+}
+.Loader_loader__word__St4os {
+  display: block;
+  font-size: 3.2rem;
+}
+@media (max-width: 768px) {
+  .Loader_loader__word__St4os {
+    font-size: 10.5rem;
+  }
+}
+.Loader_loader__progressWrapper__HYIcL {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5vh;
+  width: 100%;
+  z-index: 3;
+}
+.Loader_loader__progress__n4QSL {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+.Loader_loader__progressNumber__JzN4o {
+  position: absolute;
+  left: -5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  white-space: nowrap;
+  color: white;
+  font-size: 3.2rem;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/components/Nav/Nav.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Nav_nav___pvUa {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(220, 220, 220, 0.5411764706);
+  padding: 1em;
+  margin: 2rem;
+  margin-left: 65rem;
+  margin-right: 65rem;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.101);
+  border: 1px solid rgba(220, 220, 220, 0.5411764706);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 8;
+}
+@media (max-width: 768px) {
+  .Nav_nav___pvUa {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    top: 0;
+    bottom: auto;
+    border: 1px solid rgba(220, 220, 220, 0.5411764706);
+  }
+}
+@media (max-width: 1024px) {
+  .Nav_nav___pvUa {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    top: 0;
+    bottom: auto;
+    border: 1px solid rgba(220, 220, 220, 0.5411764706);
+  }
+}
+.Nav_nav__links__ouXtl {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.Nav_link__ObQvu {
+  color: black;
+  text-decoration: none;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/components/Work/Work.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Work_hero__Yvaht {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Work_hero__top__3Jn4l {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 4rem;
+  margin-top: 3.2rem;
+}
+.Work_hero__title__ghMJf {
+  position: absolute;
+  top: 50%;
+  left: 4rem;
+  width: calc(100% - 8rem);
+  transform: translateY(-50%);
+  margin-bottom: 8rem;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 18rem;
+}
+@media (max-width: 768px) {
+  .Work_hero__title__ghMJf {
+    font-size: 30rem;
+  }
+}
+.Work_hero__line__Q1sPK {
+  display: inline-block;
+  height: 0.4rem;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: center center;
+}
+.Work_hero__content__cQePE {
+  height: 100vh;
+  background-color: yellow;
+}
