@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Hero.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroContent = () => {
   const [text, setText] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setText((prevText) => !prevText); // toggle the text state
-    }, 5000);
+      setText((prevText) => !prevText);
+    }, 3000);
 
-    return () => clearTimeout(timer); // cleanup on unmount
+    return () => clearTimeout(timer);
   }, [text]);
 
   return (
@@ -20,9 +21,9 @@ const HeroContent = () => {
           <div className="basis-2/3 bg-slate-100">
             <Image
               className="h-full w-full object-cover"
-              src="/images/services.jpeg"
+              src="/images/work.jpeg"
               alt="Picture of the author"
-              width={500} // replace with your desired width
+              width={500}
               height={300}
               blurDataURL="/images/services.jpeg"
               placeholder="blur"
@@ -30,14 +31,15 @@ const HeroContent = () => {
           </div>
           <div className="flex basis-1/3 flex-col justify-center border p-16 md:justify-end">
             <div className="text-center text-9xl md:text-start md:text-3xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              <br />
-              consequuntur dolor illo minus dolores id assumenda debitis illum{" "}
-              <br />
-              voluptatibus hic.
+              We offer our services for each part of the content creation
+              process, from idea generation to bringing your vision to life and
+              finally packaging it for the world to see. You can learn more
+              about our services here
             </div>
             <div className="flex flex-row justify-center md:justify-end">
-              <button className={styles.button}>All Services</button>
+              <Link href="/services">
+                <button className={styles.button}>All Services</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -48,7 +50,7 @@ const HeroContent = () => {
                 VIDEO
                 <br />
                 <span className="bg-gradient-to-r from-purple-700 via-pink-500 to-orange-500 bg-clip-text font-bold text-transparent">
-                  PRODUCTION
+                  EDITING
                 </span>
               </span>
             ) : (
@@ -56,17 +58,27 @@ const HeroContent = () => {
             )}
           </div>
           <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
-            {text ? "" : "FILMING"}
-          </div>
-          <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
               ""
             ) : (
               <span className="text-center">
-                MOTION
+                SOCIAL MEDIA
                 <br />
                 <span className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 bg-clip-text font-bold text-transparent">
-                  GRAPHICS
+                  GROWTH
+                </span>
+              </span>
+            )}
+          </div>
+          <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
+            {text ? (
+              ""
+            ) : (
+              <span className="text-center">
+                SOCIAL MEDIA
+                <br />
+                <span className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 bg-clip-text font-bold text-transparent">
+                  MANAGEMENT
                 </span>
               </span>
             )}
@@ -75,10 +87,10 @@ const HeroContent = () => {
             {text ? (
               <span className="text-center">
                 <span className="bg-gradient-to-r from-purple-700 via-violet-500 to-pink-500 bg-clip-text font-bold text-transparent">
-                  CONCEPT
+                  MOTION
                 </span>
                 <br />
-                DESIGN
+                GRAPHICS
               </span>
             ) : (
               ""
@@ -87,10 +99,10 @@ const HeroContent = () => {
           <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
               <span className="text-center">
-                PRE-
+                CONTENT
                 <br />
                 <span className="bg-gradient-to-r from-red-400 via-pink-500 to-violet-500 bg-clip-text font-bold text-transparent">
-                  VISUALIZATION
+                  CREATION
                 </span>
               </span>
             ) : (
@@ -102,10 +114,10 @@ const HeroContent = () => {
               ""
             ) : (
               <span className="text-center">
-                POST
+                CHANNEL
                 <br />
                 <span className="bg-gradient-to-r from-purple-700 via-violet-500 to-pink-500 bg-clip-text font-bold text-transparent">
-                  PRODUCTION
+                  OPTIMIZATION
                 </span>
               </span>
             )}

@@ -25,7 +25,11 @@ const Nav = () => {
             Talent
           </Link>
         </li>
-        <li className={styles.nav__links__item}>About</li>
+        <li className={styles.nav__links__item}>
+          <Link className={styles.link} href="/contact">
+            Contact
+          </Link>
+        </li>
       </ul>
     </div>
   );

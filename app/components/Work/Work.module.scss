@@ -1,10 +1,9 @@
 .hero {
-  position: relative;
   height: 100vh;
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   &__top {
     display: flex;
@@ -45,4 +44,50 @@
     height: 100vh;
     background-color: yellow;
   }
+}
+
+.card {
+  aspect-ratio: 1 / 1.6;
+  cursor: pointer;
+  position: relative;
+  height: 70vh;
+  width: 56vmin;
+  margin: 10px;
+
+  &::before {
+    background: linear-gradient(
+      130deg,
+      transparent 0% 33%,
+      rgba(128, 0, 128, 0.515) 66%,
+      rgba(244, 37, 255, 0.645) 85%,
+      rgba(136, 0, 255, 0.873) 100%
+    );
+    background-position: 0% 0%;
+
+    background-size: 300% 300%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    transition: background-position 350ms ease, transform 350ms ease;
+    z-index: 1;
+  }
+  &:hover::before {
+    background-position: 100% 100%;
+    transform: scale(1.08, 1.03);
+  }
+  &:hover > .cardContent {
+    background-position: -10% 0%; // Add your hover styles here
+  }
+}
+
+.cardContent {
+  background: radial-gradient(rgba(6, 6, 6, 0.2) 8%, transparent 8%);
+  background-position: -0% 0%;
+  background-size: 5vmin 5vmin;
+  height: 100%;
+  width: 100%;
+  transition: background-position 350ms ease;
 }

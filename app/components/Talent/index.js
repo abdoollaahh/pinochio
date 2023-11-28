@@ -32,7 +32,7 @@ const Talent = () => {
                   The{" "}
                   <span className="bg-gradient-to-r from-purple-800 via-violet-700 to-pink-500 bg-clip-text text-transparent">
                     {" "}
-                    Pinochio
+                    Penochio
                   </span>{" "}
                   Talent
                 </span>
