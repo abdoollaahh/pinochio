@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const EmailContactForm = () => {
   const form = useRef();
@@ -9,10 +9,10 @@ const EmailContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_seo856f",
-        "template_dqt69xf",
+        'service_seo856f',
+        'template_dqt69xf',
         form.current,
-        "ie1mgdblJGdFu_hmZ"
+        'ie1mgdblJGdFu_hmZ'
       )
       .then(
         (result) => {
@@ -57,33 +57,46 @@ const EmailContactForm = () => {
                   </div>
                   <div className="m-1 mb-6">
                     <label for="message" class="mb-2 block font-medium">
-                      Your message
+                      Brief of the content you want us to produce
                     </label>
                     <textarea
                       id="message"
                       rows="4"
                       class="mb-10 block w-full rounded-lg bg-white/10 p-2.5 text-gray-900 shadow-md backdrop-blur-xl focus:border-blue-500 focus:ring-blue-500 "
-                      placeholder="Leave a comment..."
-                    ></textarea>
+                      placeholder="Leave a comment..."></textarea>
+                  </div>
+                  <div className="m-1 mb-6">
+                    <label for="message" class="mb-2 block font-medium">
+                      What are your 6 month goals related to your content
+                    </label>
+                    <textarea
+                      id="message"
+                      rows="4"
+                      class="mb-10 block w-full rounded-lg bg-white/10 p-2.5 text-gray-900 shadow-md backdrop-blur-xl focus:border-blue-500 focus:ring-blue-500 "
+                      placeholder="Leave a comment..."></textarea>
+                  </div>
+                  <div className="m-1 mb-6">
+                    <label for="message" class="mb-2 block font-medium">
+                      Please Attach links of your Social Media accounts
+                    </label>
+                    <textarea
+                      id="message"
+                      rows="4"
+                      class="mb-10 block w-full rounded-lg bg-white/10 p-2.5 text-gray-900 shadow-md backdrop-blur-xl focus:border-blue-500 focus:ring-blue-500 "
+                      placeholder="Leave a comment..."></textarea>
                   </div>
                 </div>
+                <p>What Platform you want videos for</p>
                 <div>
                   <input
-                    type="radio"
-                    id="radio1"
-                    name="radio"
-                    value="Radio 1"
+                    type="checkbox"
+                    id="option1"
+                    name="option"
+                    value="Option 1"
                   />
-                  <label htmlFor="radio1">Option 1</label>
-                </div>
-                <div className="mb-10">
-                  <input
-                    type="radio"
-                    id="radio2"
-                    name="radio"
-                    value="Radio 2"
-                  />
-                  <label htmlFor="radio2">Option 2</label>
+                  <label className="mx-4" htmlFor="option1">
+                    LinkedIn
+                  </label>
                 </div>
                 <div>
                   <input
@@ -92,7 +105,42 @@ const EmailContactForm = () => {
                     name="option"
                     value="Option 1"
                   />
-                  <label htmlFor="option1">Option 1</label>
+                  <label className="mx-4" htmlFor="option1">
+                    Facebook
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="option1"
+                    name="option"
+                    value="Option 1"
+                  />
+                  <label className="mx-4" htmlFor="option1">
+                    Tiktok
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="option1"
+                    name="option"
+                    value="Option 1"
+                  />
+                  <label className="mx-4" htmlFor="option1">
+                    Youtube
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="option1"
+                    name="option"
+                    value="Option 1"
+                  />
+                  <label className="mx-4" htmlFor="option1">
+                    Instagram
+                  </label>
                 </div>
                 <div>
                   <input
@@ -101,26 +149,20 @@ const EmailContactForm = () => {
                     name="option"
                     value="Option 2"
                   />
-                  <label htmlFor="option2">Option 2</label>
-                </div>
-                <div className="mb-10">
-                  <input
-                    type="checkbox"
-                    id="option3"
-                    name="option"
-                    value="Option 3"
-                  />
-                  <label htmlFor="option3">Option 3</label>
+                  <label className="mx-4" htmlFor="option2">
+                    X/Twitter
+                  </label>
                 </div>
                 <div>
-                  <label htmlFor="dropdown" className="mb-2 block font-medium">
+                  <label
+                    htmlFor="dropdown"
+                    className="mb-2 mt-10 block font-medium">
                     Your budget for the first month
                   </label>
                   <select
                     className="mb-10 block w-full rounded-lg bg-white/10 p-2.5 shadow-md backdrop-blur-xl focus:border-blue-500 focus:ring-blue-500"
                     id="dropdown"
-                    name="dropdown"
-                  >
+                    name="dropdown">
                     <option value="Option 1">$ 500- $ 1000</option>
                     <option value="Option 2">$ 1000- $ 2000</option>
                     <option value="Option 3">$ 2000- $ 5000</option>
@@ -129,7 +171,7 @@ const EmailContactForm = () => {
                 </div>
                 <div className="m-4 flex flex-row justify-center">
                   <input
-                    className="w-1/12 rounded-lg bg-blue-700 px-5 py-2.5 text-center font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300"
+                    className="w-1/12 rounded-lg bg-black px-5 py-2.5 text-center font-medium text-white  focus:outline-none focus:ring-4 focus:ring-blue-300"
                     type="submit"
                     value="Send"
                   />

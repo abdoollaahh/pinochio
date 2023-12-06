@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import styles from "./Hero.module.scss";
-import Image from "next/image";
-import Link from "next/link";
+import React, { useState, useEffect } from 'react';
+import styles from './Hero.module.scss';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const HeroContent = () => {
   const [text, setText] = useState(false);
@@ -18,17 +18,6 @@ const HeroContent = () => {
     <div className={styles.services}>
       <div className=" flex h-screen flex-col p-2 md:h-screen md:flex-row lg:flex-row">
         <div className="flex h-screen flex-col md:w-1/2">
-          <div className="basis-2/3 bg-slate-100">
-            <Image
-              className="h-full w-full object-cover"
-              src="/images/work.jpeg"
-              alt="Picture of the author"
-              width={500}
-              height={300}
-              blurDataURL="/images/services.jpeg"
-              placeholder="blur"
-            />
-          </div>
           <div className="flex basis-1/3 flex-col justify-center border p-16 md:justify-end">
             <div className="text-center text-9xl md:text-start md:text-3xl">
               We offer our services for each part of the content creation
@@ -42,6 +31,17 @@ const HeroContent = () => {
               </Link>
             </div>
           </div>
+          <div className="basis-2/3 bg-slate-100">
+            <Image
+              className="h-full w-full object-cover"
+              src="/images/work.jpeg"
+              alt="Picture of the author"
+              width={500}
+              height={300}
+              blurDataURL="/images/services.jpeg"
+              placeholder="blur"
+            />
+          </div>
         </div>
         <div className="flex h-screen flex-row flex-wrap md:w-1/2">
           <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
@@ -54,12 +54,12 @@ const HeroContent = () => {
                 </span>
               </span>
             ) : (
-              ""
+              ''
             )}
           </div>
           <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
-              ""
+              ''
             ) : (
               <span className="text-center">
                 SOCIAL MEDIA
@@ -72,7 +72,7 @@ const HeroContent = () => {
           </div>
           <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
-              ""
+              ''
             ) : (
               <span className="text-center">
                 SOCIAL MEDIA
@@ -93,7 +93,7 @@ const HeroContent = () => {
                 GRAPHICS
               </span>
             ) : (
-              ""
+              ''
             )}
           </div>
           <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
@@ -106,12 +106,12 @@ const HeroContent = () => {
                 </span>
               </span>
             ) : (
-              ""
+              ''
             )}
           </div>
           <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
-              ""
+              ''
             ) : (
               <span className="text-center">
                 CHANNEL

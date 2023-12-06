@@ -8,8 +8,6 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(255, 255, 255, 0);
   -webkit-backdrop-filter: blur(120px);
           backdrop-filter: blur(120px);
@@ -23,7 +21,8 @@
 .Hero_hero__title__2YtPy {
   font-family: "Josefin Sans", sans-serif;
   position: relative;
-  font-size: 18rem;
+  font-size: 8rem;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .Hero_hero__title__2YtPy {
@@ -31,7 +30,7 @@
   }
 }
 .Hero_hero__title__content__z1zRh {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 @media (max-width: 768px) {
   .Hero_hero__title__content__z1zRh {
@@ -98,13 +97,37 @@
   color: #000000;
 }
 
-.Hero_testimonials__SyDd5 {
-  height: auto;
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+.Hero_card__pzH9b {
+  aspect-ratio: 1/1.6;
+  cursor: pointer;
+  position: relative;
+  width: 100vmin;
+  border-radius: 20px;
+}
+.Hero_card__pzH9b::before {
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: background-position 350ms ease, transform 350ms ease;
+}
+.Hero_card__pzH9b:hover::before {
+  background-position: 100% 100%;
+  transform: scale(1, 1);
+}
+.Hero_card__pzH9b:hover > .Hero_cardContent__yjLJh {
+  background-position: -10% 10%;
+}
+
+.Hero_cardContent__yjLJh {
+  background: radial-gradient(rgba(0, 0, 0, 0.2) 8%, transparent 8%);
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: 100%;
+  width: 100%;
+  transition: background-position 350ms ease;
 }
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/components/Nav/Nav.module.scss ***!
@@ -157,3 +180,34 @@
   color: black;
   text-decoration: none;
 }
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./app/components/Hero/herotalent.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.img {
+  height: 80vh;
+  width: 100vw;
+  margin: 0rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% center;
+     object-position: 100% center;
+}
+
