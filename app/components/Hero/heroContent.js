@@ -19,11 +19,9 @@ const HeroContent = () => {
       <div className=" flex h-screen flex-col p-2 md:h-screen md:flex-row lg:flex-row">
         <div className="flex h-screen flex-col md:w-1/2">
           <div className="flex basis-1/3 flex-col justify-center border p-16 md:justify-end">
-            <div className="text-center text-9xl md:text-start md:text-3xl">
-              We offer our services for each part of the content creation
-              process, from idea generation to bringing your vision to life and
-              finally packaging it for the world to see. You can learn more
-              about our services here
+            <div className="text-center text-9xl md:text-start md:text-5xl">
+              We help you with each part of the video creation process. Learn
+              more about our offerings here.
             </div>
             <div className="flex flex-row justify-center md:justify-end">
               <Link href="/services">
@@ -34,7 +32,7 @@ const HeroContent = () => {
           <div className="basis-2/3 bg-slate-100">
             <Image
               className="h-full w-full object-cover"
-              src="/images/work.jpeg"
+              src="/images/videoEditing.jpeg"
               alt="Picture of the author"
               width={500}
               height={300}

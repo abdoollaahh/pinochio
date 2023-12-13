@@ -1,11 +1,11 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { animateTitle, animateImage, revealMenu } from "./animation";
-import styles from "./Talent.module.scss";
-import Nav from "../Nav/Nav";
-import ItemTalentCard from "./talent";
-import data from "./talentDb";
-import Footer from "../Footer/footer";
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { animateTitle, animateImage, revealMenu } from './animation';
+import styles from './Talent.module.scss';
+import Nav from '../Nav/Nav';
+import ItemTalentCard from './talent';
+import data from './talentDb';
+import Footer from '../Footer/footer';
 
 const Talent = () => {
   const timeline = useRef(gsap.timeline());
@@ -22,18 +22,20 @@ const Talent = () => {
   }, []);
 
   return (
-    <div ref={heroRef}>
+    <div
+      ref={heroRef}
+      className="bg-[url('/images/talentBG.png')] bg-auto bg-no-repeat">
       <div className={styles.content}>
         <div>
           <div className={styles.hero}>
-            <div style={{ position: "relative" }}>
+            <div style={{ position: 'relative' }}>
               <h1 className={styles.hero__title}>
                 <span data-title-first>
-                  The{" "}
+                  The{' '}
                   <span className="bg-gradient-to-r from-purple-800 via-violet-700 to-pink-500 bg-clip-text text-transparent">
-                    {" "}
+                    {' '}
                     Penochio
-                  </span>{" "}
+                  </span>{' '}
                   Talent
                 </span>
               </h1>
@@ -41,11 +43,11 @@ const Talent = () => {
                 data-title-first
                 src="/images/undraw_heart.svg"
                 style={{
-                  position: "absolute",
+                  position: 'absolute',
                   top: 0,
                   left: 1400,
-                  width: "50px",
-                  height: "50px",
+                  width: '50px',
+                  height: '50px',
                 }}
                 alt="Description of Image"
               />
@@ -59,14 +61,14 @@ const Talent = () => {
       <div>
         <div
           data-title-last
-          className=" flex flex-row flex-wrap justify-center p-20"
-        >
+          className=" flex flex-row flex-wrap justify-center p-20">
           {data.map((item, index) => (
             <ItemTalentCard
               key={index}
               title={item.title}
               image={item.image}
               description={item.description}
+              url={item.url}
             />
           ))}
         </div>

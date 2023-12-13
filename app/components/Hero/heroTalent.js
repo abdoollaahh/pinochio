@@ -83,12 +83,12 @@ const HeroTalent = () => {
         ref={trackRef}
         data-mouse-down-at="0"
         data-prev-percentage="0">
-        <img className="image" src="./images/wide5.jpg" draggable="false" />
-        <img className="image" src="./images/wide4.jpg" draggable="false" />
-        <img className="image" src="./images/wide2.jpg" draggable="false" />
         <img className="image" src="./images/wide1.jpg" draggable="false" />
+        <img className="image" src="./images/wide2.jpg" draggable="false" />
         <img className="image" src="./images/wide3.jpg" draggable="false" />
+        <img className="image" src="./images/wide4.jpg" draggable="false" />
         <img className="image" src="./images/wide5.jpg" draggable="false" />
+        <img className="image" src="./images/wide6.jpg" draggable="false" />
       </div>
     </div>
   );

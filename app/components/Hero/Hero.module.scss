@@ -6,8 +6,10 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff00;
-  backdrop-filter: blur(120px); // Add this line
+  width: 100%;
+  background-color: #000000;
+  /* background-color: #ffffff00;
+  backdrop-filter: blur(120px); // Add this line */
 
   &__top {
     display: flex;
@@ -88,6 +90,33 @@
     backdrop-filter: blur(20px); // Add this line
     border: 1px solid black;
     color: #000000;
+  }
+}
+
+.heroButton {
+  margin: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(to right, #7c3aed, #a21caf);
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  width: max-content;
+  transition: 2s;
+
+  @media (max-width: 768px) {
+    font-size: medium;
+    margin: 20px;
+  }
+
+  &:hover {
+    background: linear-gradient(to right, #4b2391, #6a1272);
+    backdrop-filter: blur(20px); // Add this line
+    transition: 2s;
   }
 }
 

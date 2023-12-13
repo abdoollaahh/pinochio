@@ -1,4 +1,3 @@
-import { Carousel } from 'antd';
 import { useState, Fragment } from 'react';
 import styles from './Hero.module.scss';
 import { Dialog, Transition } from '@headlessui/react';
@@ -102,7 +101,7 @@ const HeroTestimonials = () => {
           </Dialog>
         </Transition>
       </>
-      <div className="flex h-screen flex-row items-center justify-center">
+      <div className="flex h-max flex-row items-center justify-center mb-40">
         <div className="h-4/6 w-11/12 rounded-3xl  bg-slate-50 shadow-xl">
           <div className="m-12 flex flex-col justify-between md:flex-row">
             <div>
@@ -130,53 +129,6 @@ const HeroTestimonials = () => {
               </div>
             </div>
           </div>
-          {/* <div>
-            <Carousel autoplay autoplaySpeed={5000} dots={false}>
-              {data.map((item, index) => (
-                <div key={index}>
-                  <div className="flex flex-row justify-center ">
-                    <section className="m-12 h-auto w-2/6 rounded-3xl border bg-white p-4 shadow-xl">
-                      <div className="mx-auto my-8 px-4 py-8 text-center">
-                        <figure className="mx-auto max-w-screen-md">
-                          <svg
-                            className="mx-auto mb-3 h-12 text-gray-400"
-                            viewBox="0 0 24 27"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                          <blockquote>
-                            <p className="text-9xl font-medium text-gray-900 md:text-4xl">
-                              {item.text}
-                            </p>
-                          </blockquote>
-                          <figcaption className="mt-6 flex items-center justify-center space-x-3">
-                            <img
-                              className="h-16 w-16 rounded-full"
-                              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                              alt="profile picture"
-                            />
-                            <div className="flex items-center divide-x-2 divide-gray-500">
-                              <div className="pr-3 text-8xl font-medium text-gray-900 md:text-3xl">
-                                {item.name}
-                              </div>
-                              <div className="pl-3 text-7xl font-light text-gray-500 md:text-lg">
-                                {item.position}
-                              </div>
-                            </div>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </section>
-                  </div>
-                </div>
-              ))}
-            </Carousel>
-          </div> */}
         </div>
       </div>
     </div>

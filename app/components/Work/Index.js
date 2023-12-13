@@ -1,11 +1,11 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { animateTitle, animateImage, revealMenu } from "./animations";
-import styles from "./Work.module.scss";
-import Nav from "../Nav/Nav";
-import WorkCard from "./workCard";
-import Footer from "../Footer/footer";
-import Relax from "./relax";
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { animateTitle, animateImage, revealMenu } from './animations';
+import styles from './Work.module.scss';
+import Nav from '../Nav/Nav';
+import WorkCard from './workCard';
+import Footer from '../Footer/footer';
+import MyBlob from '../Hero/blob';
 
 const Work = () => {
   const timeline = useRef(gsap.timeline());
@@ -23,13 +23,12 @@ const Work = () => {
 
   return (
     <div>
+      <MyBlob />
       <section className={styles.hero} ref={heroRef}>
         <div className="flex flex-col items-center justify-center md:flex-row">
           <div className="mx-20 flex flex-col">
-            <h1>Our Work</h1>
-            <p className="text-center text-6xl">Over 400 Million Views</p>
+            <p className="text-9xl">400+ Million Views Generated</p>
           </div>
-          <Relax />
         </div>
       </section>
       <div>

@@ -1,4 +1,4 @@
-import EmailContactForm from "../Hero/emailContactForm";
+import EmailContactForm from '../Hero/emailContactForm';
 
 const Contact = () => {
   return (

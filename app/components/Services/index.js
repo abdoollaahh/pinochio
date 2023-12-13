@@ -62,7 +62,7 @@ const Services = () => {
         <div className="m-6 flex basis-1/2 flex-col justify-between p-6">
           <div>
             <h2 className="text-8xl font-light mb-6">What we offer</h2>
-            <p>
+            <p className="text-3xl">
               We edit videos that are optimized for each specific social media
               platform. Here are the types of videos that we specialize in:
             </p>
