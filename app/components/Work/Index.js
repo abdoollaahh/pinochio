@@ -28,6 +28,7 @@ const Work = () => {
         <div className="flex flex-col items-center justify-center md:flex-row">
           <div className="mx-20 flex flex-col">
             <p className="text-9xl">400+ Million Views Generated</p>
+            <p className="text-5xl text-center mt-8">View some of our Work</p>
           </div>
         </div>
       </section>

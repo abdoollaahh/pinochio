@@ -8,9 +8,10 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(120px);
-          backdrop-filter: blur(120px);
+  width: 100%;
+  background-color: #000000;
+  /* background-color: #ffffff00;
+  backdrop-filter: blur(120px); // Add this line */
 }
 .Hero_hero__top__5j243 {
   display: flex;
@@ -97,6 +98,35 @@
   color: #000000;
 }
 
+.Hero_heroButton__6STqS {
+  margin: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(to right, #7c3aed, #a21caf);
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 2s;
+}
+@media (max-width: 768px) {
+  .Hero_heroButton__6STqS {
+    font-size: medium;
+    margin: 20px;
+  }
+}
+.Hero_heroButton__6STqS:hover {
+  background: linear-gradient(to right, #4b2391, #6a1272);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  transition: 2s;
+}
+
 .Hero_card__pzH9b {
   aspect-ratio: 1/1.6;
   cursor: pointer;
@@ -143,8 +173,8 @@
   background-color: rgba(220, 220, 220, 0.5411764706);
   padding: 1em;
   margin: 2rem;
-  margin-left: 65rem;
-  margin-right: 65rem;
+  margin-left: 60rem;
+  margin-right: 60rem;
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.101);
   border: 1px solid rgba(220, 220, 220, 0.5411764706);
@@ -209,5 +239,11 @@
      object-fit: cover;
   -o-object-position: 100% center;
      object-position: 100% center;
+}
+
+@media (max-width: 600px) {
+  .img {
+    height: 50vh;
+  }
 }
 

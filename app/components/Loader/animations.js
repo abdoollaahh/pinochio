@@ -1,11 +1,11 @@
-import { gsap } from "gsap";
+import { gsap } from 'gsap';
 
 export const introAnimation = (wordGroupsRef) => {
   const tl = gsap.timeline();
   tl.to(wordGroupsRef.current, {
     yPercent: -80,
     duration: 3,
-    ease: "power3.inOut",
+    ease: 'power3.inOut',
   });
 
   return tl;
@@ -14,9 +14,9 @@ export const introAnimation = (wordGroupsRef) => {
 export const collapseWords = (wordGroupsRef) => {
   const tl = gsap.timeline();
   tl.to(wordGroupsRef.current, {
-    "clip-path": "polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%)",
-    duration: 3,
-    ease: "expo.inOut",
+    'clip-path': 'polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%)',
+    duration: 1,
+    ease: 'expo.inOut',
   });
 
   return tl;
@@ -28,25 +28,25 @@ export const progressAnimation = (progressRef, progressNumberRef) => {
   tl.to(progressRef.current, {
     scaleX: 1,
     duration: 3,
-    ease: "power3.inOut",
+    ease: 'power3.inOut',
   })
     .to(
       progressNumberRef.current,
       {
-        x: "100vw",
+        x: '100vw',
         duration: 3,
-        ease: "power3.inOut",
+        ease: 'power3.inOut',
       },
-      "<"
+      '<'
     )
     .to(
       progressNumberRef.current,
       {
-        textContent: "100",
+        textContent: '100',
         duration: 3,
-        roundProps: "textContent",
+        roundProps: 'textContent',
       },
-      "<"
+      '<'
     )
     .to(progressNumberRef.current, {
       y: 24,

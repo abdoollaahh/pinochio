@@ -6,28 +6,28 @@ const servicesDB = [
     title: 'Short form videos',
     description:
       'We produce highly engaging short form videos for your social media that are optimized for Tiktok, Instagram Reels and Youtube shorts.',
-    image: '/images/videoEditing.jpeg',
+    image: '/images/growth.jpeg',
   },
   {
     id: 2,
     title: 'Long form videos',
     description:
       'We specialize in applying algorithm friendly techniques to edit high quality long form videos for YouTube, Facebook and Linkedin so that you can build your own dedicated community online.',
-    image: '/images/growth.jpeg',
+    image: '/images/longform.jpg',
   },
   {
     id: 3,
     title: 'Podcasts',
     description:
       'We help you bring your candid conversations to life with our editing. We specialize in both video and audio podcasts and assist you in creating a brand of your conversations. We also edit your podcasts into engaging short form content bits that can make your conversations go viral on Tiktok, Instagram and YouTube.',
-    image: '/images/management.jpeg',
+    image: '/images/podcast.jpg',
   },
   {
     id: 4,
     title: 'Promos and advertisement',
     description:
       'We create video promos and Ads for your upcoming launches so that you can generate interest for your product online and get new potential customers.',
-    image: '/images/consultation.jpeg',
+    image: '/images/promos.jpg',
   },
 ];
 
@@ -58,7 +58,7 @@ const Services = () => {
 
   return (
     <div className="flex h-screen w-screen flex-row items-center justify-center bg-slate-50">
-      <div className="flex h-5/6 w-11/12 flex-col rounded-3xl bg-[#dcdcdc] shadow-2xl md:h-5/6 md:flex-row">
+      <div className="flex h-5/6 w-11/12 flex-col rounded-3xl bg-[#dcdcdc] shadow-2xl shadow-purple-200 md:h-5/6 md:flex-row">
         <div className="m-6 flex basis-1/2 flex-col justify-between p-6">
           <div>
             <h2 className="text-8xl font-light mb-6">What we offer</h2>
@@ -75,6 +75,7 @@ const Services = () => {
                     style={{
                       fontWeight:
                         service.title === selectedTitle ? 'normal' : 'lighter',
+                      color: service.title === selectedTitle ? '#6b21a8' : '',
                     }}
                     className="mx-4 text-7xl md:text-4xl">
                     {service.title}
