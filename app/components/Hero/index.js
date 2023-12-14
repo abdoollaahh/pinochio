@@ -33,7 +33,7 @@ const Hero = () => {
               Penochio Studios
             </p>
             <video
-              src={'/videos/heroVideo.mp4'}
+              src="https://d24opn2p7exe1a.cloudfront.net/homevid.mp4"
               type="video/mp4"
               className="absolute object-cover w-full h-full"
               autoPlay

@@ -9,10 +9,10 @@ const EmailContactForm = () => {
 
     emailjs
       .sendForm(
-        'service_seo856f',
-        'template_dqt69xf',
+        'service_y4pyf7k',
+        'template_buh969c',
         form.current,
-        'ie1mgdblJGdFu_hmZ'
+        'e6JfrBzPrZRN1bI1N'
       )
       .then(
         (result) => {
@@ -86,9 +86,9 @@ const EmailContactForm = () => {
                     <div>
                       <input
                         type="checkbox"
-                        id="option1"
+                        id="linkedin"
                         name="option"
-                        value="Option 1"
+                        value="linkedin"
                       />
                       <label className="mx-4" htmlFor="option1">
                         LinkedIn
@@ -97,9 +97,9 @@ const EmailContactForm = () => {
                     <div>
                       <input
                         type="checkbox"
-                        id="option1"
+                        id="facebook"
                         name="option"
-                        value="Option 1"
+                        value="facebook"
                       />
                       <label className="mx-4" htmlFor="option1">
                         Facebook
@@ -108,9 +108,9 @@ const EmailContactForm = () => {
                     <div>
                       <input
                         type="checkbox"
-                        id="option1"
+                        id="tiktok"
                         name="option"
-                        value="Option 1"
+                        value="tiktok"
                       />
                       <label className="mx-4" htmlFor="option1">
                         Tiktok
@@ -119,9 +119,9 @@ const EmailContactForm = () => {
                     <div>
                       <input
                         type="checkbox"
-                        id="option1"
+                        id="youtube"
                         name="option"
-                        value="Option 1"
+                        value="youtube"
                       />
                       <label className="mx-4" htmlFor="option1">
                         Youtube
@@ -130,9 +130,9 @@ const EmailContactForm = () => {
                     <div>
                       <input
                         type="checkbox"
-                        id="option1"
+                        id="instagram"
                         name="option"
-                        value="Option 1"
+                        value="instagram"
                       />
                       <label className="mx-4" htmlFor="option1">
                         Instagram
@@ -141,21 +141,22 @@ const EmailContactForm = () => {
                     <div>
                       <input
                         type="checkbox"
-                        id="option2"
+                        id="twitter"
                         name="option"
-                        value="Option 2"
+                        value="twitter"
                       />
                       <label className="mx-4" htmlFor="option2">
                         X/Twitter
                       </label>
                     </div>
 
-                    <div className="mt-6 mb-6">
+                    <div className="mt-6">
                       <div className="m-1 mb-6">
                         <label for="message" class="mb-2 block font-medium">
                           Brief of the content you want us to produce
                         </label>
                         <textarea
+                          name="content_brief"
                           id="message"
                           rows="4"
                           class="mb-10 block w-full rounded-lg bg-white/10 p-2.5 text-gray-900 shadow-md backdrop-blur-xl focus:border-blue-500 focus:ring-blue-500 "
@@ -163,9 +164,10 @@ const EmailContactForm = () => {
                       </div>
                       <div className="m-1 mb-6">
                         <label for="message" class="mb-2 block font-medium">
-                          Please Attach links of your Social Media accounts
+                          Please mention your social media account handles
                         </label>
                         <textarea
+                          name="social_media_handles"
                           id="message"
                           rows="4"
                           class="mb-10 block w-full rounded-lg bg-white/10 p-2.5 text-gray-900 shadow-md backdrop-blur-xl focus:border-blue-500 focus:ring-blue-500 "
@@ -182,10 +184,11 @@ const EmailContactForm = () => {
                         className="mb-10 block w-full rounded-lg bg-white/10 p-2.5 shadow-md backdrop-blur-xl focus:border-blue-500 focus:ring-blue-500"
                         id="dropdown"
                         name="dropdown">
-                        <option value="Option 1">$ 500- $ 1000</option>
-                        <option value="Option 2">$ 1000- $ 2000</option>
-                        <option value="Option 3">$ 2000- $ 5000</option>
-                        <option value="Option 4">$ 5000+</option>
+                        <option value="500-1000">$ 500- $ 1000</option>
+                        <option value="1000-2000">$ 1000- $ 2000</option>
+                        <option value="2000-5000">$ 2000- $ 5000</option>
+                        <option value="5000+">$ 5000+</option>
+                        <option value="Not Sure Nigga">I'm not sure</option>
                       </select>
                     </div>
                     <div className="m-4 flex flex-row justify-center">
