@@ -188,7 +188,7 @@ const EmailContactForm = () => {
                         <option value="1000-2000">$ 1000- $ 2000</option>
                         <option value="2000-5000">$ 2000- $ 5000</option>
                         <option value="5000+">$ 5000+</option>
-                        <option value="Not Sure Nigga">I'm not sure</option>
+                        <option value="Not Sure">I'm not sure</option>
                       </select>
                     </div>
                     <div className="m-4 flex flex-row justify-center">
