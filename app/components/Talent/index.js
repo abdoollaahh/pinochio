@@ -39,6 +39,9 @@ const Talent = () => {
                   Talent
                 </span>
               </h1>
+              <p className="text-center md:text-5xl">
+                Here are some of the creators we have worked with
+              </p>
               <img
                 data-title-first
                 src="/images/undraw_heart.svg"

@@ -98,6 +98,36 @@
   color: #000000;
 }
 
+.Hero_workbutton__84_wi {
+  margin: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 768px) {
+  .Hero_workbutton__84_wi {
+    font-size: medium;
+    margin: 20px;
+  }
+}
+.Hero_workbutton__84_wi:hover {
+  background-color: #5b21b6;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid #5b21b6;
+}
+
 .Hero_heroButton__6STqS {
   margin: 2rem;
   display: inline-block;

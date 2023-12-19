@@ -93,6 +93,34 @@
   }
 }
 
+.workbutton {
+  margin: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
+  cursor: pointer;
+  width: max-content;
+
+  @media (max-width: 768px) {
+    font-size: medium;
+    margin: 20px;
+  }
+
+  &:hover {
+    background-color: #5b21b6;
+    backdrop-filter: blur(20px); // Add this line
+    border: 1px solid #5b21b6;
+  }
+}
+
 .heroButton {
   margin: 2rem;
   display: inline-block;

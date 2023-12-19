@@ -1,6 +1,7 @@
-import styles from './Work.module.scss';
 import { useState, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
+import styles from '../Hero/Hero.module.scss';
+import Image from 'next/image';
 
 const WorkCard = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -315,32 +316,102 @@ const WorkCard = () => {
         </Transition>
       </>
 
-      <div className="flex flex-col justify-center md:flex-row">
-        <div className="m-8 flex flex-col">
-          <div onClick={openModal} className={styles.card}>
-            <div className={styles.cardContent}>
-              <h2 className="text-9xl md:text-6xl">Promos</h2>
-              <p>Click to view More</p>
+      <div className="flex h-max flex-row items-center justify-center mb-40">
+        <div className="h-4/6 w-11/12 rounded-3xl  bg-slate-50 shadow-xl">
+          <div className="m-12 flex flex-col justify-between md:flex-row">
+            <div>
+              <h2 className="text-9xl md:text-7xl text-purple-800">Promos</h2>
+              <div>
+                <button onClick={openModal} className={styles.workbutton}>
+                  View All
+                </button>
+              </div>
             </div>
-          </div>
-          <div onClick={openModal3} className={styles.card}>
-            <div className={styles.cardContent}>
-              <h2 className="text-9xl md:text-6xl">Youtube</h2>
-              <p>Click to view More</p>
+            <div>
+              <div className="flex flex-row justify-center">
+                <iframe
+                  className="rounded-3xl shadow-xl transition duration-500 ease-in-out hover:shadow-2xl"
+                  width="853"
+                  height="480"
+                  src="https://www.youtube.com/embed/1NNujhfByUk?si=aiCU1KWJmIdnrJgj"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="Embedded youtube"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div className="m-8 flex flex-col">
-          <div onClick={openModal2} className={styles.card}>
-            <div className={styles.cardContent}>
-              <h2 className="text-9xl md:text-6xl">Reels</h2>
-              <p>Click to view More</p>
+      </div>
+      <div className="flex h-max flex-row items-center justify-center mb-40">
+        <div className="h-4/6 w-11/12 rounded-3xl  shadow-xl">
+          <div className="m-12 flex flex-col justify-between md:flex-row">
+            <div>
+              <h2 className="text-9xl md:text-7xl text-purple-800">Reels</h2>
+              <div>
+                <button onClick={openModal2} className={styles.workbutton}>
+                  View All
+                </button>
+              </div>
+            </div>
+            <div>
+              <div className="flex flex-row justify-center">
+                <Image width="600" height="600" src="/images/reels.jpg" />
+              </div>
             </div>
           </div>
-          <div onClick={openModal4} className={styles.card}>
-            <div className={styles.cardContent}>
-              <h2 className="text-9xl md:text-6xl">Podcasts</h2>
-              <p>Click to view More</p>
+        </div>
+      </div>
+      <div className="flex h-max flex-row items-center justify-center mb-40">
+        <div className="h-4/6 w-11/12 rounded-3xl  bg-slate-50 shadow-xl">
+          <div className="m-12 flex flex-col justify-between md:flex-row">
+            <div>
+              <h2 className="text-9xl md:text-7xl text-purple-800">Youtube</h2>
+              <div>
+                <button onClick={openModal3} className={styles.workbutton}>
+                  View All
+                </button>
+              </div>
+            </div>
+            <div>
+              <div className="flex flex-row justify-center">
+                <iframe
+                  className="rounded-3xl shadow-xl transition duration-500 ease-in-out hover:shadow-2xl"
+                  width="853"
+                  height="480"
+                  src="https://www.youtube.com/embed/6YPfsE0DY40?si=JYJz47TRFgGE9MWp"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="Embedded youtube"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex h-max flex-row items-center justify-center mb-40">
+        <div className="h-4/6 w-11/12 rounded-3xl  bg-slate-50 shadow-xl">
+          <div className="m-12 flex flex-col justify-between md:flex-row">
+            <div>
+              <h2 className="text-9xl md:text-7xl text-purple-800">Podcasts</h2>
+              <div>
+                <button onClick={openModal4} className={styles.workbutton}>
+                  View All
+                </button>
+              </div>
+            </div>
+            <div>
+              <div className="flex flex-row justify-center">
+                <iframe
+                  className="rounded-3xl shadow-xl transition duration-500 ease-in-out hover:shadow-2xl"
+                  width="853"
+                  height="480"
+                  src="https://www.youtube.com/embed/YDU5FRiRPWI?si=n7tQNkERw427qgl6"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="Embedded youtube"
+                />
+              </div>
             </div>
           </div>
         </div>

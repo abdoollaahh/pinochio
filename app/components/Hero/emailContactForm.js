@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import styles from '../Hero/Hero.module.scss';
 
 const EmailContactForm = () => {
   const form = useRef();
@@ -16,7 +17,7 @@ const EmailContactForm = () => {
       )
       .then(
         (result) => {
-          // show the user a success message
+          window.alert('Your message has been sent successfully');
         },
         (error) => {
           // show the user an error
@@ -193,7 +194,7 @@ const EmailContactForm = () => {
                     </div>
                     <div className="m-4 flex flex-row justify-center">
                       <input
-                        className="w-1/12 rounded-lg bg-black px-5 py-2.5 text-center font-medium text-white  focus:outline-none focus:ring-4 focus:ring-blue-300"
+                        className={styles.button}
                         type="submit"
                         value="Send"
                       />
