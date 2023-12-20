@@ -552,13 +552,13 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .mb-10 {
   margin-bottom: 2.5rem;
@@ -596,8 +596,8 @@ video {
 .hidden {
   display: none;
 }
-.h-16 {
-  height: 4rem;
+.h-36 {
+  height: 9rem;
 }
 .h-4\/6 {
   height: 66.666667%;
@@ -615,18 +615,6 @@ video {
 .h-screen {
   height: 100vh;
 }
-.h-40 {
-  height: 10rem;
-}
-.h-20 {
-  height: 5rem;
-}
-.h-24 {
-  height: 6rem;
-}
-.h-36 {
-  height: 9rem;
-}
 .min-h-full {
   min-height: 100%;
 }
@@ -639,26 +627,14 @@ video {
 .w-11\/12 {
   width: 91.666667%;
 }
-.w-16 {
-  width: 4rem;
+.w-36 {
+  width: 9rem;
 }
 .w-full {
   width: 100%;
 }
 .w-screen {
   width: 100vw;
-}
-.w-40 {
-  width: 10rem;
-}
-.w-20 {
-  width: 5rem;
-}
-.w-24 {
-  width: 6rem;
-}
-.w-36 {
-  width: 9rem;
 }
 .max-w-fit {
   max-width: -moz-fit-content;
@@ -914,9 +890,6 @@ video {
 .text-center {
   text-align: center;
 }
-.text-right {
-  text-align: right;
-}
 .align-middle {
   vertical-align: middle;
 }
@@ -927,10 +900,6 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .text-6xl {
   font-size: 3.75rem;
@@ -948,14 +917,8 @@ video {
   font-size: 8rem;
   line-height: 1;
 }
-.text-\[20rem\] {
-  font-size: 20rem;
-}
 .text-\[10rem\] {
   font-size: 10rem;
-}
-.text-\[11rem\] {
-  font-size: 11rem;
 }
 .text-\[12rem\] {
   font-size: 12rem;
@@ -1237,16 +1200,16 @@ img {
     margin-right: 2rem;
   }
 
+  .md\:h-16 {
+    height: 4rem;
+  }
+
   .md\:h-5\/6 {
     height: 83.333333%;
   }
 
   .md\:h-screen {
     height: 100vh;
-  }
-
-  .md\:h-16 {
-    height: 4rem;
   }
 
   .md\:w-1\/2 {
@@ -1257,12 +1220,12 @@ img {
     width: 33.333333%;
   }
 
-  .md\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .md\:w-16 {
     width: 4rem;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .md\:flex-row {
@@ -1290,10 +1253,6 @@ img {
     text-align: left;
   }
 
-  .md\:text-right {
-    text-align: right;
-  }
-
   .md\:text-start {
     text-align: start;
   }
@@ -1301,6 +1260,11 @@ img {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-4xl {
@@ -1313,14 +1277,14 @@ img {
     line-height: 1;
   }
 
-  .md\:text-7xl {
-    font-size: 4.5rem;
+  .md\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .md\:text-8xl {
@@ -1328,18 +1292,9 @@ img {
     line-height: 1;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .md\:font-medium {
-    font-weight: 500;
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:font-light {
