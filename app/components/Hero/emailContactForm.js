@@ -40,7 +40,6 @@ const EmailContactForm = () => {
               to get a quote, contact us through here and we will get back to
               you.
             </p>
-            <p className="text-4xl text-center">haidermustafaexec@gmail.com</p>
           </div>
           <div className="flex w-full md:w-2/3 flex-col md:flex-col">
             <div className="flex flex-row items-center justify-center">
