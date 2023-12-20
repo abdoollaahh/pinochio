@@ -878,11 +878,27 @@ video {
 .p-8 {
   padding: 2rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .pl-2 {
   padding-left: 0.5rem;
 }
 .pr-2 {
   padding-right: 0.5rem;
+}
+.pr-10 {
+  padding-right: 2.5rem;
+}
+.pr-20 {
+  padding-right: 5rem;
+}
+.pr-40 {
+  padding-right: 10rem;
+}
+.pr-44 {
+  padding-right: 11rem;
 }
 .text-left {
   text-align: left;

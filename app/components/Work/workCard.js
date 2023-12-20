@@ -323,7 +323,7 @@ const WorkCard = () => {
               <h2 className="text-[12rem] md:text-7xl text-purple-800 text-center md:text-left">
                 Promos
               </h2>
-              <p className="my-4 font-medium">
+              <p className="my-4 pr-20 font-medium">
                 We have delivered these promos for our talented clients. These
                 include Uncharted Spirit’s launch trailer for their TV show
                 called “Supply Run” which was very well received by audiences
@@ -360,7 +360,7 @@ const WorkCard = () => {
               <h2 className="text-[12rem] md:text-7xl text-purple-800 text-center md:text-left">
                 Short Form
               </h2>
-              <p className="my-4 font-medium">
+              <p className="my-4 pr-20 font-medium">
                 We have created short form content for over 30+ different
                 creators with followers ranging from 5k to over 2 million on
                 Instagram, TikTok and YouTube. Our short form edited content has
@@ -388,7 +388,7 @@ const WorkCard = () => {
               <h2 className="text-[12rem] md:text-7xl text-purple-800 text-center md:text-left">
                 Long Form
               </h2>
-              <p className="my-4">
+              <p className="my-4 pr-20">
                 YouTube, Facebook and Linkedin require a specific type of
                 editing to make sure that your long form content is as easy to
                 watch as the short form content available online. We have been
@@ -425,7 +425,7 @@ const WorkCard = () => {
               <h2 className="text-[12rem] md:text-7xl text-purple-800 text-center md:text-left">
                 Podcasts
               </h2>
-              <p className="my-4">
+              <p className="my-4 pr-20">
                 Podcasts are currently the fastest growing content genre online
                 with more and more people looking for authentic and candid
                 conversations. We have found a myriad of success in this genre
