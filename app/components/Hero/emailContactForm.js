@@ -1,12 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from '../Hero/Hero.module.scss';
 
 const EmailContactForm = () => {
   const form = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
+    setIsSubmitting(true); // disable the button
 
     emailjs
       .sendForm(
@@ -18,9 +20,11 @@ const EmailContactForm = () => {
       .then(
         (result) => {
           window.alert('Your message has been sent successfully');
+          setIsSubmitting(false); // re-enable the button
         },
         (error) => {
           // show the user an error
+          setIsSubmitting(false); // re-enable the button
         }
       );
   };
@@ -197,6 +201,7 @@ const EmailContactForm = () => {
                         className={styles.button}
                         type="submit"
                         value="Send"
+                        disabled={isSubmitting}
                       />
                     </div>
                   </div>

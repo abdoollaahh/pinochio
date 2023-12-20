@@ -61,8 +61,10 @@ const Services = () => {
       <div className="flex h-5/6 w-11/12 flex-col rounded-3xl bg-[#dcdcdc] shadow-2xl shadow-purple-200 md:h-5/6 md:flex-row">
         <div className="m-6 flex basis-1/2 flex-col justify-between p-6">
           <div>
-            <h2 className="text-8xl font-light mb-6">What we offer</h2>
-            <p className="text-3xl">
+            <h2 className="md:font-light font-bold text-9xl md:text-8xl mb-6">
+              What we offer
+            </h2>
+            <p className="text-8xl md:text-3xl">
               We edit videos that are optimized for each specific social media
               platform. Here are the types of videos that we specialize in:
             </p>
@@ -77,7 +79,7 @@ const Services = () => {
                         service.title === selectedTitle ? 'normal' : 'lighter',
                       color: service.title === selectedTitle ? '#6b21a8' : '',
                     }}
-                    className="mx-4 text-7xl md:text-4xl">
+                    className="mx-4 text-9xl md:text-4xl">
                     {service.title}
                   </div>
                   <div className="m-6 flex items-center justify-center">
@@ -87,7 +89,7 @@ const Services = () => {
                         setSelectedDescription(service.description);
                         setSelectedTitle(service.title);
                       }}
-                      className="flex h-16 w-16 items-center justify-center rounded-full border bg-black p-4 transition duration-100 ease-out hover:scale-110 hover:border-purple-800 hover:bg-purple-800">
+                      className="flex h-36 w-36 md:h-16 md:w-16 items-center justify-center rounded-full border bg-black p-4 transition duration-100 ease-out hover:scale-110 hover:border-purple-800 hover:bg-purple-800">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -117,8 +119,10 @@ const Services = () => {
           className="basis-1/2 rounded-3xl bg-slate-300">
           <div className="flex h-full w-full bg-black/30 backdrop-blur-sm">
             <div className="m-6 flex flex-col justify-between p-6 text-white">
-              <h2 className="text-6xl font-light">{selectedTitle}</h2>
-              <p className="text-4xl">{selectedDescription}</p>
+              <h2 className="text-9xl md:text-6xl font-light">
+                {selectedTitle}
+              </h2>
+              <p className="text-8xl md:text-4xl">{selectedDescription}</p>
             </div>
           </div>
         </div>

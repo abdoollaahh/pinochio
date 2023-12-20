@@ -84,6 +84,12 @@
     font-size: medium;
     margin: 20px;
   }
+  &:disabled {
+    background-color: #cccccc; // Change as needed
+    color: black; // Change as needed
+    cursor: not-allowed;
+    border: #cccccc;
+  }
 
   &:hover {
     background-color: #ffffff0f;

@@ -20,8 +20,7 @@ const HeroContent = () => {
         <div className="flex h-screen flex-col md:w-1/2">
           <div className="flex basis-1/3 flex-col justify-center border p-16 md:justify-end">
             <div className="text-center text-9xl md:text-start md:text-5xl">
-              We help you with each part of the video creation process. Learn
-              more about our offerings here.
+              Learn more about our offerings here
             </div>
             <div className="flex flex-row justify-center md:justify-end">
               <Link href="/services">

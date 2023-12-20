@@ -105,11 +105,13 @@ const HeroTestimonials = () => {
         <div className="h-4/6 w-11/12 rounded-3xl  bg-slate-50 shadow-xl">
           <div className="m-12 flex flex-col justify-between md:flex-row">
             <div>
-              <h2 className="text-9xl md:text-7xl">Testimonials</h2>
-              <p className="mt-10 text-4xl">
+              <h2 className="text-[10rem] md:text-7xl text-center md:text-left">
+                Testimonials
+              </h2>
+              <p className="mt-10 md:text-4xl text-center md:text-left">
                 Stories from Our Clients Who Transformed Their Vision with Us
               </p>
-              <div>
+              <div className="md:text-left text-center">
                 <button onClick={openModal} className={styles.button}>
                   View All
                 </button>

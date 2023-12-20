@@ -72,7 +72,9 @@ const HeroTalent = () => {
   return (
     <div className="img flex flex-row">
       <div className="flex flex-col m-24 justify-center items-center">
-        <h1 className="basis-1/3 text-center text-7xl">Our Amazing Talent</h1>
+        <h1 className="basis-1/3 text-center md:text-7xl text-[10rem]">
+          Our Amazing Talent
+        </h1>
         <Link href="/talent">
           <button className={styles.button}>View All</button>
         </Link>

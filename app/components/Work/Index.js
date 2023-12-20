@@ -27,13 +27,16 @@ const Work = () => {
       <section className={styles.hero} ref={heroRef}>
         <div className="flex flex-col items-center justify-center md:flex-row">
           <div className="mx-20 flex flex-col">
-            <p className="text-9xl">
+            <p className="text-[12rem] md:text-8xl font-bold text-center">
+              Our Work Has Generated Over{' '}
               <span className="bg-gradient-to-r from-purple-700 to-pink-500 bg-clip-text text-transparent">
-                400+
+                400
               </span>{' '}
-              Million Views Generated
+              Million Views
             </p>
-            <p className="text-5xl text-center mt-8">View some of our Work</p>
+            <p className="text-9xl md:text-5xl text-center mt-8">
+              here’s some of the videos we’ve edited
+            </p>
           </div>
         </div>
       </section>

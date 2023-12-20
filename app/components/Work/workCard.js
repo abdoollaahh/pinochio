@@ -320,8 +320,18 @@ const WorkCard = () => {
         <div className="h-4/6 w-11/12 rounded-3xl  bg-slate-50 shadow-xl">
           <div className="m-12 flex flex-col justify-between md:flex-row">
             <div>
-              <h2 className="text-9xl md:text-7xl text-purple-800">Promos</h2>
-              <div>
+              <h2 className="text-[12rem] md:text-7xl text-purple-800 text-center md:text-left">
+                Promos
+              </h2>
+              <p className="my-4 font-medium">
+                We have delivered these promos for our talented clients. These
+                include Uncharted Spirit’s launch trailer for their TV show
+                called “Supply Run” which was very well received by audiences
+                interested in travel and adventure. We have also worked on
+                promos related to Venture capital firms such as the Y Combinator
+                Demo Day video for Attack Capital.
+              </p>
+              <div className="text-center md:text-left">
                 <button onClick={openModal} className={styles.workbutton}>
                   View All
                 </button>
@@ -347,8 +357,17 @@ const WorkCard = () => {
         <div className="h-4/6 w-11/12 rounded-3xl  shadow-xl">
           <div className="m-12 flex flex-col justify-between md:flex-row">
             <div>
-              <h2 className="text-9xl md:text-7xl text-purple-800">Reels</h2>
-              <div>
+              <h2 className="text-[12rem] md:text-7xl text-purple-800 text-center md:text-left">
+                Short Form
+              </h2>
+              <p className="my-4 font-medium">
+                We have created short form content for over 30+ different
+                creators with followers ranging from 5k to over 2 million on
+                Instagram, TikTok and YouTube. Our short form edited content has
+                amassed over 200 million views in total with some of the viral
+                ones listed here.
+              </p>
+              <div className="text-center md:text-left">
                 <button onClick={openModal2} className={styles.workbutton}>
                   View All
                 </button>
@@ -356,7 +375,7 @@ const WorkCard = () => {
             </div>
             <div>
               <div className="flex flex-row justify-center">
-                <Image width="600" height="600" src="/images/reels.jpg" />
+                <Image width="1000" height="1000" src="/images/reels.jpg" />
               </div>
             </div>
           </div>
@@ -366,8 +385,18 @@ const WorkCard = () => {
         <div className="h-4/6 w-11/12 rounded-3xl  bg-slate-50 shadow-xl">
           <div className="m-12 flex flex-col justify-between md:flex-row">
             <div>
-              <h2 className="text-9xl md:text-7xl text-purple-800">Youtube</h2>
-              <div>
+              <h2 className="text-[12rem] md:text-7xl text-purple-800 text-center md:text-left">
+                Long Form
+              </h2>
+              <p className="my-4">
+                YouTube, Facebook and Linkedin require a specific type of
+                editing to make sure that your long form content is as easy to
+                watch as the short form content available online. We have been
+                able to amass millions of views from our long form content which
+                has helped a number of our clients to create a monetizable
+                audience online. Here is some of our long form video work.
+              </p>
+              <div className="text-center md:text-left">
                 <button onClick={openModal3} className={styles.workbutton}>
                   View All
                 </button>
@@ -393,8 +422,18 @@ const WorkCard = () => {
         <div className="h-4/6 w-11/12 rounded-3xl  bg-slate-50 shadow-xl">
           <div className="m-12 flex flex-col justify-between md:flex-row">
             <div>
-              <h2 className="text-9xl md:text-7xl text-purple-800">Podcasts</h2>
-              <div>
+              <h2 className="text-[12rem] md:text-7xl text-purple-800 text-center md:text-left">
+                Podcasts
+              </h2>
+              <p className="my-4">
+                Podcasts are currently the fastest growing content genre online
+                with more and more people looking for authentic and candid
+                conversations. We have found a myriad of success in this genre
+                with the growth of podcasts channels related to Sports, Travel,
+                Psychology and more that we have edited for. Here are some of
+                the recent ones we’ve worked on
+              </p>
+              <div className="text-center md:text-left">
                 <button onClick={openModal4} className={styles.workbutton}>
                   View All
                 </button>
