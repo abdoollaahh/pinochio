@@ -10,8 +10,6 @@
   flex-direction: column;
   width: 100%;
   background-color: #000000;
-  /* background-color: #ffffff00;
-  backdrop-filter: blur(120px); // Add this line */
 }
 .Hero_hero__top__5j243 {
   display: flex;
@@ -20,7 +18,7 @@
   margin-inline: 4rem;
 }
 .Hero_hero__title__2YtPy {
-  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
   position: relative;
   font-size: 8rem;
   text-align: center;
@@ -41,6 +39,11 @@
 
 .Hero_services__l_6py {
   background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .Hero_services__l_6py {
+    height: 200vh;
+  }
 }
 
 .Hero_content__q3rxz {
@@ -139,16 +142,28 @@
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
-  background: linear-gradient(to right, #7c3aed, #a21caf);
   border-radius: 50px;
   text-align: center;
   text-decoration: none;
   font-size: large;
-  transition: background-color 0.5s ease;
   cursor: pointer;
   width: -moz-max-content;
   width: max-content;
-  transition: 2s;
+  transition: 0.3s ease;
+  background: linear-gradient(270deg, #7c3aed, #ab1cb5);
+  background-size: 200% 200%;
+  animation: Hero_Gradient__5mb0Y 3s ease infinite;
+}
+@keyframes Hero_Gradient__5mb0Y {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @media (max-width: 768px) {
   .Hero_heroButton__6STqS {
@@ -157,10 +172,7 @@
   }
 }
 .Hero_heroButton__6STqS:hover {
-  background: linear-gradient(to right, #4b2391, #6a1272);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  transition: 2s;
+  scale: 1.08;
 }
 
 .Hero_card__pzH9b {
@@ -216,7 +228,7 @@
   border: 1px solid rgba(220, 220, 220, 0.5411764706);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  z-index: 8;
+  z-index: 20;
 }
 @media (max-width: 768px) {
   .Nav_nav___pvUa {

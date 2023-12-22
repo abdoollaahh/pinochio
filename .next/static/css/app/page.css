@@ -1,0 +1,297 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/components/Hero/Hero.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.Hero_hero__SpqmS {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000000;
+}
+.Hero_hero__top__5j243 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 4rem;
+}
+.Hero_hero__title__2YtPy {
+  font-weight: bold;
+  position: relative;
+  font-size: 8rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .Hero_hero__title__2YtPy {
+    font-size: 20rem;
+  }
+}
+.Hero_hero__title__content__z1zRh {
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .Hero_hero__title__content__z1zRh {
+    font-size: 5rem;
+  }
+}
+
+.Hero_services__l_6py {
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .Hero_services__l_6py {
+    height: 200vh;
+  }
+}
+
+.Hero_content__q3rxz {
+  height: 100vh;
+  padding: 5rem;
+  font-size: xx-large;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .Hero_content__q3rxz {
+    font-size: small;
+    height: 50vh;
+    padding: 8rem;
+  }
+}
+.Hero_content__box__qn1sF {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  text-align: center;
+}
+
+.Hero_button__2sfFo {
+  margin: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  transition: background-color 0.5s ease;
+  border: 1px solid black;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 768px) {
+  .Hero_button__2sfFo {
+    font-size: medium;
+    margin: 20px;
+  }
+}
+.Hero_button__2sfFo:disabled {
+  background-color: #cccccc;
+  color: black;
+  cursor: not-allowed;
+  border: #cccccc;
+}
+.Hero_button__2sfFo:hover {
+  background-color: rgba(255, 255, 255, 0.0588235294);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid black;
+  color: #000000;
+}
+
+.Hero_workbutton__84_wi {
+  margin: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 768px) {
+  .Hero_workbutton__84_wi {
+    font-size: medium;
+    margin: 20px;
+  }
+}
+.Hero_workbutton__84_wi:hover {
+  background-color: #5b21b6;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid #5b21b6;
+}
+
+.Hero_heroButton__6STqS {
+  margin: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.3s ease;
+  background: linear-gradient(270deg, #7c3aed, #ab1cb5);
+  background-size: 200% 200%;
+  animation: Hero_Gradient__5mb0Y 3s ease infinite;
+}
+@keyframes Hero_Gradient__5mb0Y {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media (max-width: 768px) {
+  .Hero_heroButton__6STqS {
+    font-size: medium;
+    margin: 20px;
+  }
+}
+.Hero_heroButton__6STqS:hover {
+  scale: 1.08;
+}
+
+.Hero_card__pzH9b {
+  aspect-ratio: 1/1.6;
+  cursor: pointer;
+  position: relative;
+  width: 100vmin;
+  border-radius: 20px;
+}
+.Hero_card__pzH9b::before {
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: background-position 350ms ease, transform 350ms ease;
+}
+.Hero_card__pzH9b:hover::before {
+  background-position: 100% 100%;
+  transform: scale(1, 1);
+}
+.Hero_card__pzH9b:hover > .Hero_cardContent__yjLJh {
+  background-position: -10% 10%;
+}
+
+.Hero_cardContent__yjLJh {
+  background: radial-gradient(rgba(0, 0, 0, 0.2) 8%, transparent 8%);
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: 100%;
+  width: 100%;
+  transition: background-position 350ms ease;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./app/components/Nav/Nav.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Nav_nav___pvUa {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(220, 220, 220, 0.5411764706);
+  padding: 1em;
+  margin: 2rem;
+  margin-left: 60rem;
+  margin-right: 60rem;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.101);
+  border: 1px solid rgba(220, 220, 220, 0.5411764706);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 20;
+}
+@media (max-width: 768px) {
+  .Nav_nav___pvUa {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    top: 0;
+    bottom: auto;
+    border: 1px solid rgba(220, 220, 220, 0.5411764706);
+  }
+}
+@media (max-width: 1024px) {
+  .Nav_nav___pvUa {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    top: 0;
+    bottom: auto;
+    border: 1px solid rgba(220, 220, 220, 0.5411764706);
+  }
+}
+.Nav_nav__links__ouXtl {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.Nav_link__ObQvu {
+  color: black;
+  text-decoration: none;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./app/components/Hero/herotalent.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.img {
+  height: 80vh;
+  width: 100vw;
+  margin: 0rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% center;
+     object-position: 100% center;
+}
+
+@media (max-width: 600px) {
+  .img {
+    height: 50vh;
+  }
+}
+

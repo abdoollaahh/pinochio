@@ -41,7 +41,7 @@ const HeroContent = () => {
           </div>
         </div>
         <div className="flex h-screen flex-row flex-wrap md:w-1/2">
-          <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
+          <div className="flex w-1/2 h-1/3 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
               <span className="text-center">
                 VIDEO
@@ -54,7 +54,7 @@ const HeroContent = () => {
               ''
             )}
           </div>
-          <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
+          <div className="flex w-1/2 h-1/3 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
               ''
             ) : (
@@ -67,7 +67,7 @@ const HeroContent = () => {
               </span>
             )}
           </div>
-          <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
+          <div className="flex w-1/2 h-1/3 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
               ''
             ) : (
@@ -80,7 +80,7 @@ const HeroContent = () => {
               </span>
             )}
           </div>
-          <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
+          <div className="flex w-1/2 h-1/3 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
               <span className="text-center">
                 <span className="bg-gradient-to-r from-purple-700 via-violet-500 to-pink-500 bg-clip-text font-bold text-transparent">
@@ -93,7 +93,7 @@ const HeroContent = () => {
               ''
             )}
           </div>
-          <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
+          <div className="flex w-1/2 h-1/3 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
               <span className="text-center">
                 CONTENT
@@ -106,7 +106,7 @@ const HeroContent = () => {
               ''
             )}
           </div>
-          <div className="flex w-1/2 flex-row items-center justify-center border text-9xl md:text-5xl">
+          <div className="flex w-1/2 h-1/3 flex-row items-center justify-center border text-9xl md:text-5xl">
             {text ? (
               ''
             ) : (

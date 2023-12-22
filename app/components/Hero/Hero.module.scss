@@ -8,8 +8,6 @@
   flex-direction: column;
   width: 100%;
   background-color: #000000;
-  /* background-color: #ffffff00;
-  backdrop-filter: blur(120px); // Add this line */
 
   &__top {
     display: flex;
@@ -19,7 +17,7 @@
   }
 
   &__title {
-    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
     position: relative;
     font-size: 8rem;
     text-align: center;
@@ -38,6 +36,9 @@
 
 .services {
   background-color: #ffffff;
+  @media (max-width: 768px) {
+    height: 200vh;
+  }
 }
 
 .content {
@@ -132,15 +133,31 @@
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
-  background: linear-gradient(to right, #7c3aed, #a21caf);
   border-radius: 50px;
   text-align: center;
   text-decoration: none;
   font-size: large;
-  transition: background-color 0.5s ease;
   cursor: pointer;
   width: max-content;
-  transition: 2s;
+  transition: 0.3s ease;
+
+  background: linear-gradient(270deg, #7c3aed, #ab1cb5);
+  background-size: 200% 200%;
+  animation: Gradient 3s ease infinite;
+
+  // ...
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   @media (max-width: 768px) {
     font-size: medium;
@@ -148,9 +165,7 @@
   }
 
   &:hover {
-    background: linear-gradient(to right, #4b2391, #6a1272);
-    backdrop-filter: blur(20px); // Add this line
-    transition: 2s;
+    scale: 1.08;
   }
 }
 

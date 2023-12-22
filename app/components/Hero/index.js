@@ -8,6 +8,7 @@ import Footer from '../Footer/footer';
 import HeroTestimonials from './heroTestimonials';
 import Link from 'next/link';
 import HeroTalent from './heroTalent';
+import HeroAbout from './heroAbout';
 
 const Hero = () => {
   const timeline = useRef(gsap.timeline());
@@ -29,7 +30,7 @@ const Hero = () => {
         <div>
           <Nav />
           <section className={styles.hero} ref={heroRef}>
-            <p className="text-4xl m-4 p-4 font-semibold z-10 drop-shadow-3xl text-white/70">
+            <p className="text-4xl m-4 p-4 font-semibold z-10 drop-shadow-3xl text-white/10 md:text-white/70">
               Penochio Studios
             </p>
             <video
@@ -40,8 +41,8 @@ const Hero = () => {
               loop
               muted
             />
-            <div className="text-white/70 flex flex-col justify-center items-center h-full drop-shadow-3xl">
-              <h1 className={styles.hero__title}>
+            <div className="text-white/70 flex flex-col justify-center items-center h-full drop-shadow-3xl z-10">
+              <h1 className="text-[12rem] md:text-8xl font-bold text-center">
                 We create{' '}
                 <span className="bg-gradient-to-r from-purple-700 to-pink-500 bg-clip-text text-transparent">
                   videos
@@ -67,6 +68,7 @@ const Hero = () => {
         <HeroContent />
         <HeroTalent />
         <HeroTestimonials />
+        <HeroAbout />
       </div>
       <Footer />
     </div>
