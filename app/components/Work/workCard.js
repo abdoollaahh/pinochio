@@ -145,41 +145,47 @@ const WorkCard = () => {
                       className="text-3xl font-medium leading-6 text-gray-900">
                       <div className="flex flex-col justify-center">
                         <iframe
-                          className="mb-5 rounded-3xl shadow-xl transition duration-500 ease-in-out hover:shadow-2xl"
-                          width="853"
-                          height="480"
-                          src="https://www.youtube.com/embed/1NNujhfByUk?si=aiCU1KWJmIdnrJgj"
+                          width="315"
+                          height="560"
+                          src="https://www.youtube.com/embed/KnkYJvnWRy8"
+                          title="YouTube video player"
+                          frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          title="Embedded youtube"
-                        />
+                          allowfullscreen></iframe>
                         <iframe
-                          className="mb-5 rounded-3xl shadow-xl transition duration-500 ease-in-out hover:shadow-2xl"
-                          width="853"
-                          height="480"
-                          src="https://www.youtube.com/embed/Yfi39PB-QeA?si=hJPS8M_OUrEGtf33"
+                          className="my-4"
+                          width="315"
+                          height="560"
+                          src="https://www.youtube.com/embed/D4Z2-E2dWh4"
+                          title="YouTube video player"
+                          frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          title="Embedded youtube"
-                        />
+                          allowfullscreen></iframe>
                         <iframe
-                          className="mb-5 rounded-3xl shadow-xl transition duration-500 ease-in-out hover:shadow-2xl"
-                          width="853"
-                          height="480"
-                          src="https://www.youtube.com/embed/rLwcCKabBRk?si=q9TodqNuqBbzEC0E"
+                          width="315"
+                          height="560"
+                          src="https://www.youtube.com/embed/9q0xJhZxvEI"
+                          title="YouTube video player"
+                          frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          title="Embedded youtube"
-                        />
+                          allowfullscreen></iframe>
                         <iframe
-                          className="rounded-3xl shadow-xl transition duration-500 ease-in-out hover:shadow-2xl"
-                          width="853"
-                          height="480"
-                          src="https://www.youtube.com/embed/JKfESyH_AHc?si=7AAiIHjBDPbMuBb-"
+                          className="my-4"
+                          width="315"
+                          height="560"
+                          src="https://www.youtube.com/embed/qdKazs9CuEI"
+                          title="YouTube video player"
+                          frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          title="Embedded youtube"
-                        />
+                          allowfullscreen></iframe>
+                        <iframe
+                          width="315"
+                          height="560"
+                          src="https://www.youtube.com/embed/iX45RUfV_6g"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
                       </div>
                     </Dialog.Title>
                   </Dialog.Panel>

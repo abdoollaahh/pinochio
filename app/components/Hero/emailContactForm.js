@@ -98,6 +98,7 @@ const EmailContactForm = () => {
                           id="facebook"
                           value="facebook"
                           class="hidden peer"
+                          name="option"
                         />
                         <label
                           htmlFor="facebook"
@@ -122,6 +123,7 @@ const EmailContactForm = () => {
                           id="linkedin"
                           value="linkedin"
                           class="hidden peer"
+                          name="option"
                         />
                         <label
                           htmlFor="linkedin"
@@ -146,6 +148,7 @@ const EmailContactForm = () => {
                           id="tiktok"
                           value="tiktok"
                           class="hidden peer"
+                          name="option"
                         />
                         <label
                           htmlFor="tiktok"
@@ -170,6 +173,7 @@ const EmailContactForm = () => {
                           id="youtube"
                           value="youtube"
                           class="hidden peer"
+                          name="option"
                         />
                         <label
                           htmlFor="youtube"
@@ -195,6 +199,7 @@ const EmailContactForm = () => {
                           value="instagram"
                           class="hidden peer"
                           required=""
+                          name="option"
                         />
                         <label
                           htmlFor="instagram"
@@ -219,6 +224,7 @@ const EmailContactForm = () => {
                           id="twitter"
                           value="twitter"
                           class="hidden peer"
+                          name="option"
                         />
                         <label
                           htmlFor="twitter"
