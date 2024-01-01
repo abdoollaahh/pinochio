@@ -30,7 +30,9 @@ const HeroTalent = () => {
           speed={3}
           onReady={() => console.log('I am ready')}>
           {images.map((imageUrl, index) => (
-            <div key={index} className="rounded h-auto w-96 object-cover">
+            <div
+              key={index}
+              className="rounded h-auto w-[50rem] md:w-96 object-cover">
               <img src={imageUrl} alt="carousel item" />
             </div>
           ))}

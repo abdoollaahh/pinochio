@@ -1,7 +1,6 @@
 import { useState, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import styles from '../Hero/Hero.module.scss';
-import Image from 'next/image';
 
 const WorkCard = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -182,6 +181,14 @@ const WorkCard = () => {
                           width="315"
                           height="560"
                           src="https://www.youtube.com/embed/iX45RUfV_6g"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                        <iframe
+                          width="315"
+                          height="560"
+                          src="https://www.youtube.com/embed/q_fSLPAHJDk?si=cXLS4nu6Id1XjTtr"
                           title="YouTube video player"
                           frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -381,7 +388,15 @@ const WorkCard = () => {
             </div>
             <div>
               <div className="flex flex-row justify-center">
-                <Image width="1000" height="1000" src="/images/reels.jpg" />
+                <iframe
+                  className="rounded-3xl shadow-xl transition duration-500 ease-in-out hover:shadow-2xl"
+                  width="853"
+                  height="480"
+                  src="https://www.youtube.com/embed/UD8-UCLkD6Q?si=3holZ-5eCoiJNdby"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="Embedded youtube"
+                />
               </div>
             </div>
           </div>
